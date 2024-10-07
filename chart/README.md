@@ -1,3 +1,10 @@
+## Erasme instructions
+
+```bash 
+helm repo add browsertrix https://docs.browsertrix.com/helm-repo/
+helm upgrade --install btrix browsertrix/browsertrix --version 1.11.7 -f ./chart/erasme.yaml --namespace browsertrix
+```
+
 ## Update Helm dependencies
 
 * It needs to update Helm charts after changing its dependencies (e.g. logging)
